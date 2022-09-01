@@ -6,6 +6,7 @@ body
     font-family: monospace;
     align-items: center;
     justify-content: center;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -14,10 +15,9 @@ body
 }
 .top
 {
-    
+    display: flex;
     width: 100%;
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -26,7 +26,7 @@ body
 {
     
     width: 100%;
-    perspective: 1000px;
+    perspective: 10000px;
 }
 .card
 {
@@ -34,8 +34,8 @@ body
     border-radius: 15px;
     border: 5px solid white;
     color: azure;
-    width: 300px;
-    height: 600px;
+    width: 500px;
+    height: 1000px;
     margin: auto;
     box-shadow: 0 70px 63px -60px #494848;
     transform-style: preserve-3d;
@@ -43,6 +43,14 @@ body
 }
 .card  .thumb
 {
+    background-color: rgb(214, 10, 139);
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 480px;
+    height: 980px;
+    transform: translateZ(10px);
+    border: 4px solid white;
     background-size: cover;
     border-radius: 15px;
 }
@@ -53,27 +61,16 @@ body
  display: flex;
  position: absolute;
  top: 40px;
- width: 100%;
- height: 100%;
+ width: 470px;
+ height: 980px;
  z-index: -1;
  filter: blur(55px); 
-
-}
-.thumb
-{
-    background-color: rgb(214, 10, 139);
-    position: relative;
-    left: 5px;
-    top: 5px;
-    width: 280px;
-    height: 580px;
-    transform: translateZ(10px);
-    border: 4px solid white;
+ background-color: rgb(214, 10, 139);
 }
 .card h2
 {
 
-    top: -660px;
+    top: -1060px;
     color: rgb(255, 255, 255);
     position: relative;
     text-align: center;
@@ -96,12 +93,14 @@ img
     margin: auto;
     display: flex;
 }
-.tela
+.card .tela
 {
     overflow-y: scroll;
-    height: 560px;
+    width: 480px;
+    height: 980px;
 }
-.barbie
+.card .barbie
 {
-    width: 100%;
+    width: 480px;
+    height: 850px;
 }
